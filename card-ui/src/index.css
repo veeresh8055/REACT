@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+  font-weight: 400;
+  font-family: cursive;
+  background-color: #e3e2e27f;
+}
+.parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 4rem;
+}
+.card {
+  height: 350px;
+  width: 300px;
+  border: 2px solid rgba(0, 0, 0, 0.263);
+  padding: 10px;
+  border-radius: 30px;
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: column;
+}
+.card .top {
+  /* background-color: red; */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card .top img {
+  height: 40px;
+  width: 40px;
+  padding: 1px;
+  border-radius: 50%;
+  border: 1.5px solid #4d4d4d;
+  object-fit: cover;
+}
+
+.card .top button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  font-size: 10px;
+  color: #4d4d4d;
+  border: 1px #4d4d4d;
+  border-radius: 3px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+.card .center {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 5px;
+  justify-content: start;
+}
+.card .center h3 {
+  font-size: 20px;
+  color: #1f1f1ff4;
+}
+.card .center h3 span {
+  font-size: 10px;
+  color: #353535;
+}
+.card .center h2 {
+  font-size: 23px;
+}
+.card .center div {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 15px;
+}
+.card .center div h4 {
+  font-size: 12px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #4d4d4d47;
+  color: #353535;
+  border-radius: 5px;
+  font-weight: 400;
+}
+
+.card .bottom {
+  margin-top: auto;
+  border-top: 1px solid #4d4d4d;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.card .bottom div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.card .bottom div h3 {
+  font-size: 15px;
+  font-weight: 300;
+}
+.card .bottom div p {
+  font-size: 12px;
+  color: #4d4d4d;
+}
+.card .bottom button {
+  padding: 5px 10px;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #161616;
+  color: #ffffffc6;
+  cursor: pointer;
+}
