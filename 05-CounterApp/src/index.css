@@ -52,7 +52,9 @@ button {
   border-radius: 7px;
   /* color: #161616; */
   text-transform: uppercase;
+  cursor: pointer;
 }
+
 button:active {
   scale: 0.95;
 }
