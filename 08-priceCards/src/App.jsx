@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Monthly from "./components/Monthly.jsx";
 import Yearly from "./components/yearly.jsx";
 const App = () => {
+
   const [toggle, setToggle] = useState(true);
 
   return (
@@ -18,13 +19,13 @@ const App = () => {
 
         <div className="toggle">
           <button
-            className={toggle ? "yearly" : ""}
+            className={toggle ? "selected" : ""}
             onClick={() => setToggle(true)}
           >
             Yearly
           </button>
           <button
-            className={!toggle ? "yearly" : ""}
+            className={!toggle ? "selected" : ""}
             onClick={() => setToggle(false)}
           >
             Monthly
