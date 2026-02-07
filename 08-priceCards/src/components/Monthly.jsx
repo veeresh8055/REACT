@@ -15,34 +15,25 @@ const Monthly = () => {
           <ul>
             <li>
               {" "}
-              <RiCheckboxCircleFill />
-              Smart AI Assistant
+              <RiCheckboxCircleFill style={{color:"greenyellow"}} />
+               AI Assistant
             </li>
             <li>
               {" "}
-              <RiCheckboxCircleFill />
+              <RiCheckboxCircleFill style={{color:"greenyellow"}} />
               Income Tracking
             </li>
             <li>
               {" "}
-              <RiCheckboxCircleFill />
+              <RiCheckboxCircleFill style={{color:"greenyellow"}} />
               Expense tracking
             </li>
             <li>
               {" "}
-              <RiCheckboxCircleFill />
+              <RiCheckboxCircleFill style={{color:"greenyellow"}} />
               Warranty Tracking
             </li>
-            <li>
-              {" "}
-              <RiCheckboxCircleFill />
-              Subscription Tracking
-            </li>
-            <li>
-              {" "}
-              <RiCheckboxCircleFill />
-              Event Categorization
-            </li>
+            
           </ul>
         </div>
       </div>
@@ -57,32 +48,32 @@ const Monthly = () => {
           <ul>
             <li>
               {" "}
-              <RiCheckboxCircleFill />
+              <RiCheckboxCircleFill style={{color:"greenyellow"}}/>
               Smart AI Assistant
             </li>
             <li>
               {" "}
-              <RiCheckboxCircleFill />
+              <RiCheckboxCircleFill style={{color:"greenyellow"}} />
               Income Tracking
             </li>
             <li>
               {" "}
-              <RiCheckboxCircleFill />
+              <RiCheckboxCircleFill style={{color:"greenyellow"}}/>
               Expense tracking
             </li>
             <li>
               {" "}
-              <RiCheckboxCircleFill />
+              <RiCheckboxCircleFill style={{color:"greenyellow"}}/>
               Warranty Tracking
             </li>
             <li>
               {" "}
-              <RiCheckboxCircleFill />
+              <RiCheckboxCircleFill style={{color:"greenyellow"}}/>
               Subscription Tracking
             </li>
             <li>
               {" "}
-              <RiCheckboxCircleFill />
+              <RiCheckboxCircleFill style={{color:"greenyellow"}}/>
               Event Categorization
             </li>
           </ul>
@@ -97,34 +88,30 @@ const Monthly = () => {
         </div>
         <div className="cardbottom">
           <ul>
+           
             <li>
               {" "}
-              <RiCheckboxCircleFill />
-              Smart AI Assistant
-            </li>
-            <li>
-              {" "}
-              <RiCheckboxCircleFill />
+              <RiCheckboxCircleFill style={{color:"greenyellow"}}/>
               Income Tracking
             </li>
             <li>
               {" "}
-              <RiCheckboxCircleFill />
+              <RiCheckboxCircleFill style={{color:"greenyellow"}}/>
               Expense tracking
             </li>
             <li>
               {" "}
-              <RiCheckboxCircleFill />
+              <RiCheckboxCircleFill style={{color:"greenyellow"}}/>
               Warranty Tracking
             </li>
             <li>
               {" "}
-              <RiCheckboxCircleFill />
+              <RiCheckboxCircleFill style={{color:"greenyellow"}}/>
               Subscription Tracking
             </li>
             <li>
               {" "}
-              <RiCheckboxCircleFill />
+              <RiCheckboxCircleFill style={{color:"greenyellow"}}/>
               Event Categorization
             </li>
           </ul>
