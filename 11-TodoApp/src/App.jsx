@@ -37,7 +37,7 @@ const App = () => {
         {todoArray.map((element, index) => (
           <h2 id={index}>
             {" "}
-            <span>{index + 1}</span> {element}{" "}
+            <span>{index + 1}</span>. {element}{" "}
           </h2>
         ))}
       </div>
