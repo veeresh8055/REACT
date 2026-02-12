@@ -8,7 +8,7 @@ const App = () => {
     e.preventDefault();
 
     if (todo === "") {
-      return  alert("Enter todo ");
+      return alert("Enter todo ");
     }
 
     setTodoArray([...todoArray, todo]);
@@ -34,9 +34,12 @@ const App = () => {
       </div>
 
       <div className="display">
-        {todoArray.map((element, index) => 
-          <h2 id={index}>  <span>{index+1}</span> {element} </h2>
-        )}
+        {todoArray.map((element, index) => (
+          <h2 id={index}>
+            {" "}
+            <span>{index + 1}</span> {element}{" "}
+          </h2>
+        ))}
       </div>
     </>
   );
