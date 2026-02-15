@@ -15,6 +15,13 @@ const App = () => {
     setTodo("");
   };
 
+  const deleteHandler = (id) => {
+    // console.log(id)
+    let newArray = todoArray.filter((element, index) => index != id);
+    //  console.log(newArray)
+    setTodoArray([...newArray]);
+  };
+
   return (
     <>
       <div className="container">
@@ -37,7 +44,8 @@ const App = () => {
         {todoArray.map((element, index) => (
           <h2 id={index}>
             {" "}
-            <span>{index + 1}</span>. {element}{" "}
+            {index + 1}. {element}{" "}
+            <span onClick={() => deleteHandler(index)}>DELETE</span>{" "}
           </h2>
         ))}
       </div>
