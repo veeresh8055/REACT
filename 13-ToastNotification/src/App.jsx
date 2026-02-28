@@ -1,35 +1,37 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useEffect, useState } from "react";
+import "./index.css";
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const [showToast, setShowToast] = useState(false);
+
+  useEffect(() => {
+    let timer;
+
+    if (showToast) {
+      timer = setTimeout(() => {
+        setShowToast(false);
+      }, 3000);
+    }
+
+    return () => clearTimeout(timer);
+  }, [showToast]);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div className="app">
+      <button className="btn" onClick={() => setShowToast(true)}>
+        Show Notification
+      </button>
 
-export default App
+      {showToast && (
+        <div className="toast">
+          <span>✅ Task completed successfully!</span>
+          <button className="close" onClick={() => setShowToast(false)}>
+            ✖
+          </button>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default App;
