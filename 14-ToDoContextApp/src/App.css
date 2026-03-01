@@ -201,6 +201,7 @@ body {
   color: #fff;
   display: grid;
   place-items: center;
+  
   cursor: pointer;
   transition: all 180ms ease;
 }

@@ -1,12 +1,14 @@
 import { useState } from "react";
 
-const Create = ({ addTodo }) => {
+const Create = (props) => {
+  const {addTodo} = props;
   const [todo, setTodo] = useState("");
 
   const handleCreate = (event) => {
     event.preventDefault();
 
-    if (!todo.trim()) {
+    if (!todo) {
+      alert("eneter valid tod ");
       return;
     }
 

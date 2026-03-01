@@ -5,9 +5,9 @@ const Read = ({ todos, deleteTodo, toggleTodo }) => {
         <h2>Tasks</h2>
       </header>
 
-      {!todos.length ? (
+      {todos.length == 0 ? (
         <div className="empty-state">
-          <p>No tasks yet. Start by adding one from the left.</p>
+          <p>No tasks yet....!</p>
         </div>
       ) : (
         <ul className="task-list">
@@ -15,12 +15,12 @@ const Read = ({ todos, deleteTodo, toggleTodo }) => {
             <li
               key={todo.id}
               className="task-item"
-              style={{ animationDelay: `${index * 70}ms` }}
+              style={{ animationDelay: `${index * 1000}ms` }}
             >
               <button
                 onClick={() => toggleTodo(todo.id)}
                 className={`task-check ${todo.completed ? "is-done" : ""}`}
-                aria-label={
+                title={
                   todo.completed ? "Mark task as pending" : "Mark task as done"
                 }
               >
@@ -34,7 +34,6 @@ const Read = ({ todos, deleteTodo, toggleTodo }) => {
               <button
                 onClick={() => deleteTodo(todo.id)}
                 className="task-delete"
-                aria-label="Delete task"
               >
                 Delete
               </button>
