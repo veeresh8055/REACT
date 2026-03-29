@@ -3,6 +3,10 @@ import {useForm } from 'react-hook-form'
 
 const Create = () => {
  const {register , handlesubmit }=useForm();
+//  const submitHandler = ()=>{
+
+//  }
+
     return (
    <form >
       <input {...register("image")} type='url' placeholder="Enter  Image URL" className=' border-b  block  outline-0 p-2' />
