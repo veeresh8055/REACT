@@ -1,0 +1,34 @@
+
+*{
+margin: 0;
+padding: 0;
+
+}
+.main{
+  height: 100vh;
+  width: 100%;
+  background-color: aqua;
+  color: #161616;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: cursive;
+  flex-direction: column;
+}
+
+h1{
+  padding:1rem ;
+ 
+}
+button{
+  padding: 1rem 1.5rem;
+  background-color: #77e377;
+  color: #161616;
+  font-family: monospace;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+button:hover{
+  background-color: #66c366;
+}
