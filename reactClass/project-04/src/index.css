@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 1rem 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input{
+    padding: .5rem 1.5rem ;
+    border: 1px solid #161616;
+    border-radius: 10px;
+    width: 50%;
+}
+.links{
+    display: flex;
+    gap: 1rem;
+
+}
+.login{
+    padding: 10px 20px;
+    border: none;
+    background-color: tomato;
+    color: aliceblue;
+    border-radius: 10px;
+}
+.sighup{
+    padding: 10px 20px;
+    border: none;
+    color: tomato;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+span{
+    color: tomato;
+ font-family: fantasy;
+}
+h1{
+font-family: fantasy;  
+    font-weight: 100;
+}
