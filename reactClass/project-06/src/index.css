@@ -1,0 +1,14 @@
+ *{
+  background-color: #161616;
+  color: rgb(204, 197, 185);
+ }
+button{
+  padding: 10px 20px ;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: rgb(79, 80, 82);
+}
+button:active{
+  background-color: rgb(147, 213, 147);
+}
