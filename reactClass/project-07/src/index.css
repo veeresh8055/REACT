@@ -1,0 +1,12 @@
+button{
+  padding: 10px 20px;
+  background-color: tomato;
+  border-radius: 10px;
+  border: none;
+}
+button:hover{
+  background-color: rgb(120, 220, 120);
+}
+h1{
+  color: rgb(92, 73, 39);
+}
