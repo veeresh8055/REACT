@@ -26,6 +26,8 @@ const App = () => {
         <button onClick={reset}>Reset</button>
         </div>
       </div>
+
+
     </>
   );
 };
