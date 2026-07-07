@@ -1,0 +1,15 @@
+.card{
+   padding: 10px 20px ;
+   background-color: aliceblue;
+   color: #161616;
+}
+
+li{
+  padding: 10px 20px ;
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  border: none;
+  margin: 1rem;
+  list-style: none;
+
+}
