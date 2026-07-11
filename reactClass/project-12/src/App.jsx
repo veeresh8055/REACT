@@ -6,8 +6,8 @@ import Women from './components/Women'
 import Electronics from './components/Electronics'
 import Home from './components/Home'
 
-const App = () => {
-  return (
+const App = (  ) => {    
+   return (
     <div className='main'>
       <Navbar />
       <Routes>

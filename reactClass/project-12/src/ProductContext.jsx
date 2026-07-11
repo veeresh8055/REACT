@@ -25,8 +25,10 @@ const ProductContextProvider = ({ children }) => {
     fetchData();
   }, []);
 
+  const [search, setSearch] = useState("");
+
   return (
-    <ProductContext.Provider value={{ products, setProducts }}>
+    <ProductContext.Provider value={{ products, setProducts , search, setSearch }}>
       {children}
     </ProductContext.Provider>
   );

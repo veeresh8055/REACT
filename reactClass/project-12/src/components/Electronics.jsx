@@ -3,8 +3,12 @@ import { ProductContext } from '../ProductContext'
 import Card from './Card'
 
 const Electronics = () => {
-  const { products } = useContext(ProductContext)
-  const electronicsProducts = products.filter((product) => product.category === 'electronics')
+  const { products, search } = useContext(ProductContext)
+  const electronicsProducts = products.filter(
+    (product) =>
+      product.category === 'electronics' &&
+      product.title.toLowerCase().includes(search.toLowerCase())
+  )
 
   return (
     <main className="home">

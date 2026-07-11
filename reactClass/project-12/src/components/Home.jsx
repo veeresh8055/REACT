@@ -3,12 +3,16 @@ import { ProductContext } from '../ProductContext'
 import Card from './Card'
 
 const Home = () => {
-  const { products } = useContext(ProductContext)
+  const { products, search } = useContext(ProductContext)
+   
+  const filteredProducts = products.filter((product) =>
+    product.title.toLowerCase().includes(search.toLowerCase())
+  ) 
 
   return (
     <main className="home">
       <section className="home__grid" aria-label="Product list">
-        {products?.map((product, index) => (
+        {filteredProducts?.map((product, index) => (
           <Card
             key={product.id ?? `${product.title}-${index}`}
             name={product.title}
@@ -17,6 +21,7 @@ const Home = () => {
             rating={product.rating?.rate ?? 0}
           />
         ))}
+        
       </section>
     </main>
   )

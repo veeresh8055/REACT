@@ -1,7 +1,11 @@
-import React from 'react'
+import React , {useContext } from 'react'
 import { NavLink } from "react-router-dom"
+import { ProductContext } from '../ProductContext'
+
 
 const Navbar = () => {
+  const { search, setSearch } = useContext(ProductContext)
+
   return (
     <header className="navbar">
       <div className="navbar__brand">
@@ -18,7 +22,7 @@ const Navbar = () => {
             <path d="M10.5 4a6.5 6.5 0 1 0 4.13 11.53l4.42 4.42 1.42-1.42-4.42-4.42A6.5 6.5 0 0 0 10.5 4Zm0 2a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Z" />
           </svg>
         </span>
-        <input type="text" placeholder="Search products" aria-label="Search products" />
+        <input type="text" placeholder="Search products" aria-label="Search products"  value={search} onChange={(e) => setSearch(e.target.value)} />
       </div>
 
       <nav className="navbar__links" aria-label="Primary navigation">
